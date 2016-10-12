@@ -48,3 +48,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'reactrb'
+gem 'react-rails', '>= 1.3.0'
+gem 'opal-rails', '>= 0.8.1'
+gem 'therubyracer', platforms: :ruby
+gem 'react-router-rails', '~> 0.13.3'
+gem 'reactrb-router'
+gem 'reactive-record', '>= 0.8.0'
