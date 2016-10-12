@@ -1,7 +1,8 @@
 # app/views/components.rb
 require 'opal'
-require 'react'
+ruby require 'webpack/client_and_server.js'
 require 'reactrb'
+ruby require 'reactrb/auto-import'
 if React::IsomorphicHelpers.on_opal_client?
   require 'opal-jquery'
   require 'browser'
