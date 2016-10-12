@@ -32,10 +32,34 @@ module Components
       end
 
       def render
-        ReactBootstrap::Button(bsStyle: 'success', bsSize: "small") do
-          "Success"
-        end.on(:click) do
-          alert('you clicked me!')
+        div do
+          ReactBootstrap::Navbar(bsStyle: :inverse) do
+            ReactBootstrap::Nav() do
+              ReactBootstrap::NavbarBrand() do
+                a(href: '#') { "Reactrb Showcase" }
+              end
+              ReactBootstrap::NavDropdown(
+                eventKey: 1,
+                title: 'Things',
+                id: :drop_down
+              ) do
+                (1..5).each do |n|
+                  ReactBootstrap::MenuItem(href: '#',
+                    key: n,
+                    eventKey: "1.#{n}"
+                  ) do
+                    "Number #{n}"
+                  end.on(:click) { say_hello(n) }
+                end
+              end
+            end
+          end
+          div.container do
+            ReactPlayer(
+              url: 'https://www.youtube.com/embed/FzCsDVfPQqk',
+              playing: true
+            )
+          end
         end
       end
     end
