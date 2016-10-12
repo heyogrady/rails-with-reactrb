@@ -1,0 +1,13 @@
+{
+  "name": "rails-with-reactrb",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-bootstrap": "^0.29.5",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+  }
+}
