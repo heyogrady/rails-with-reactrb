@@ -56,3 +56,5 @@ gem 'therubyracer', platforms: :ruby
 gem 'react-router-rails', '~> 0.13.3'
 gem 'reactrb-router'
 gem 'reactive-record', '>= 0.8.0'
+gem 'synchromesh', git: "https://github.com/reactrb/synchromesh.git"
+

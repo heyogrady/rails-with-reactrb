@@ -54,12 +54,16 @@ module Components
               end
             end
           end
+
           div.container do
             ReactPlayer(
               url: 'https://www.youtube.com/embed/FzCsDVfPQqk',
               playing: true
             )
+            br
+            PostsList()
           end
+
         end
       end
     end
