@@ -58,3 +58,5 @@ gem 'reactrb-router'
 gem 'reactive-record', '>= 0.8.0'
 gem 'synchromesh', git: "https://github.com/reactrb/synchromesh.git"
 
+gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
+gem 'foreman'
