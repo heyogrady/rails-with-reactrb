@@ -32,8 +32,11 @@ module Components
       end
 
       def render
-        puts "Rendering my first component!"
-        "hello #{params.say_hello_to if params.say_hello_to}"
+        ReactBootstrap::Button(bsStyle: 'success', bsSize: "small") do
+          "Success"
+        end.on(:click) do
+          alert('you clicked me!')
+        end
       end
     end
   end
